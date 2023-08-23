@@ -1,0 +1,14 @@
+D:\Asp.Net Projects\Mawdw3CompanyTask\Entity\bin\Release\net6.0\Entity.deps.json
+D:\Asp.Net Projects\Mawdw3CompanyTask\Entity\bin\Release\net6.0\Entity.runtimeconfig.json
+D:\Asp.Net Projects\Mawdw3CompanyTask\Entity\bin\Release\net6.0\Entity.dll
+D:\Asp.Net Projects\Mawdw3CompanyTask\Entity\bin\Release\net6.0\Entity.pdb
+D:\Asp.Net Projects\Mawdw3CompanyTask\Entity\obj\Release\net6.0\Entity.csproj.AssemblyReference.cache
+D:\Asp.Net Projects\Mawdw3CompanyTask\Entity\obj\Release\net6.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Asp.Net Projects\Mawdw3CompanyTask\Entity\obj\Release\net6.0\Entity.AssemblyInfoInputs.cache
+D:\Asp.Net Projects\Mawdw3CompanyTask\Entity\obj\Release\net6.0\Entity.AssemblyInfo.cs
+D:\Asp.Net Projects\Mawdw3CompanyTask\Entity\obj\Release\net6.0\Entity.csproj.CoreCompileInputs.cache
+D:\Asp.Net Projects\Mawdw3CompanyTask\Entity\obj\Release\net6.0\Entity.dll
+D:\Asp.Net Projects\Mawdw3CompanyTask\Entity\obj\Release\net6.0\refint\Entity.dll
+D:\Asp.Net Projects\Mawdw3CompanyTask\Entity\obj\Release\net6.0\Entity.pdb
+D:\Asp.Net Projects\Mawdw3CompanyTask\Entity\obj\Release\net6.0\Entity.genruntimeconfig.cache
+D:\Asp.Net Projects\Mawdw3CompanyTask\Entity\obj\Release\net6.0\ref\Entity.dll

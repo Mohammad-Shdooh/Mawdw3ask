@@ -1,0 +1,17 @@
+D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\bin\Debug\net6.0\DAL.deps.json
+D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\bin\Debug\net6.0\DAL.runtimeconfig.json
+D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\bin\Debug\net6.0\DAL.dll
+D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\bin\Debug\net6.0\DAL.pdb
+D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\bin\Debug\net6.0\Entity.dll
+D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\bin\Debug\net6.0\Entity.pdb
+D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\DAL.csproj.CopyComplete
+D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\DAL.dll
+D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\refint\DAL.dll
+D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\DAL.pdb
+D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\DAL.genruntimeconfig.cache
+D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\ref\DAL.dll

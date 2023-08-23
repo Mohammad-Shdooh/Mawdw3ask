@@ -1,0 +1,661 @@
+2023-08-23 03:36:48.953 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 03:36:51.127 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 03:36:51.131 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 03:36:51.154 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 03:36:51.159 +03:00 [INF] Hosting environment: Development
+2023-08-23 03:36:51.163 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 03:36:53.697 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 03:36:57.209 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 3552.2098ms
+2023-08-23 03:36:58.402 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 03:36:58.418 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 16.4043ms
+2023-08-23 03:36:59.373 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 03:36:59.523 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 149.7082ms
+2023-08-23 03:37:03.523 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 03:37:04.164 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 640.5676ms
+2023-08-23 03:37:27.577 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=1000 - -
+2023-08-23 03:37:29.753 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-08-23 03:37:29.771 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-23 03:37:29.771 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=1000 - - - 401 0 - 2194.1513ms
+2023-08-23 03:38:06.552 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 03:38:07.531 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 03:38:07.534 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 03:38:07.556 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 03:38:07.561 +03:00 [INF] Hosting environment: Development
+2023-08-23 03:38:07.564 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 03:38:09.008 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 03:38:11.017 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 03:38:11.017 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 03:38:11.031 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 12.2950ms
+2023-08-23 03:38:11.106 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 2131.8604ms
+2023-08-23 03:38:11.336 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 318.2329ms
+2023-08-23 03:38:11.725 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 03:38:12.578 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 853.2429ms
+2023-08-23 03:38:42.403 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=10000 - -
+2023-08-23 03:38:42.644 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:38:42.741 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 03:38:57.470 +03:00 [INF] Executed DbCommand (861ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 03:39:04.045 +03:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-08-23 03:39:04.059 +03:00 [INF] Executed action Api.Controllers.StudentsController.getStudentByID (Api) in 21305.5914ms
+2023-08-23 03:39:04.063 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:39:04.114 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=10000 - - - 204 0 - 21710.6604ms
+2023-08-23 03:40:36.828 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=10000 - -
+2023-08-23 03:40:36.838 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:40:36.840 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 03:40:37.102 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 03:40:37.189 +03:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-08-23 03:40:37.189 +03:00 [INF] Executed action Api.Controllers.StudentsController.getStudentByID (Api) in 349.2656ms
+2023-08-23 03:40:37.189 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:40:37.189 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=10000 - - - 204 0 - 361.7195ms
+2023-08-23 03:41:07.466 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=10000 - -
+2023-08-23 03:41:07.472 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:41:07.472 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 03:41:07.502 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 03:41:07.587 +03:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-08-23 03:41:07.587 +03:00 [INF] Executed action Api.Controllers.StudentsController.getStudentByID (Api) in 114.752ms
+2023-08-23 03:41:07.587 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:41:07.587 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=10000 - - - 204 0 - 126.7710ms
+2023-08-23 03:41:15.526 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=10000 - -
+2023-08-23 03:41:15.527 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:41:15.527 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 03:41:15.535 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 03:41:44.816 +03:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-08-23 03:41:44.816 +03:00 [INF] Executed action Api.Controllers.StudentsController.getStudentByID (Api) in 29289.0446ms
+2023-08-23 03:41:44.816 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:41:44.816 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=10000 - - - 204 0 - 29289.9937ms
+2023-08-23 03:42:25.966 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=10000 - -
+2023-08-23 03:42:44.096 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:42:44.096 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 03:42:44.106 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 03:43:25.104 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 03:43:28.356 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 03:43:28.364 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 03:43:28.391 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 03:43:28.408 +03:00 [INF] Hosting environment: Development
+2023-08-23 03:43:28.419 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 03:43:30.142 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 03:43:32.442 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 03:43:32.442 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 03:43:32.461 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 17.5289ms
+2023-08-23 03:43:32.468 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 2347.5464ms
+2023-08-23 03:43:32.712 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 269.6094ms
+2023-08-23 03:43:33.168 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 03:43:34.295 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1126.6316ms
+2023-08-23 03:43:43.574 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=1000 - -
+2023-08-23 03:43:45.674 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:43:45.791 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 03:43:52.570 +03:00 [INF] Executed DbCommand (328ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 03:43:57.295 +03:00 [INF] Executed action Api.Controllers.StudentsController.getStudentByID (Api) in 11490.9614ms
+2023-08-23 03:43:57.300 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:43:58.840 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=1000 - - - 404 - application/json 15265.9283ms
+2023-08-23 03:49:49.127 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 03:49:49.289 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 162.1279ms
+2023-08-23 03:49:49.411 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 03:49:49.411 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 0.4739ms
+2023-08-23 03:49:49.411 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 03:49:49.629 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 217.6598ms
+2023-08-23 03:49:50.812 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 03:49:50.841 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 29.4277ms
+2023-08-23 03:50:01.630 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=1000 - -
+2023-08-23 03:50:08.735 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:50:08.743 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 03:50:08.852 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 03:50:08.873 +03:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-08-23 03:50:08.873 +03:00 [INF] Executed action Api.Controllers.StudentsController.getStudentByID (Api) in 130.3928ms
+2023-08-23 03:50:08.874 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:50:08.874 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=1000 - - - 204 0 - 7243.9961ms
+2023-08-23 03:50:14.631 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=1000 - -
+2023-08-23 03:50:14.649 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:50:14.649 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 03:50:14.694 +03:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 03:50:14.694 +03:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-08-23 03:50:14.695 +03:00 [INF] Executed action Api.Controllers.StudentsController.getStudentByID (Api) in 45.7294ms
+2023-08-23 03:50:14.695 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:50:14.695 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=1000 - - - 204 0 - 63.9308ms
+2023-08-23 03:50:35.373 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 03:50:36.171 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 03:50:36.174 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 03:50:36.192 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 03:50:36.199 +03:00 [INF] Hosting environment: Development
+2023-08-23 03:50:36.201 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 03:50:37.603 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 03:50:39.477 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 03:50:39.477 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 03:50:39.534 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 55.9196ms
+2023-08-23 03:50:39.566 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 2003.8236ms
+2023-08-23 03:50:39.681 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 203.8414ms
+2023-08-23 03:50:40.569 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 03:50:41.325 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 756.0680ms
+2023-08-23 03:50:51.288 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=10000 - -
+2023-08-23 03:50:51.611 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:50:51.766 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 03:50:59.675 +03:00 [INF] Executed DbCommand (282ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 03:51:00.090 +03:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-08-23 03:51:00.122 +03:00 [INF] Executed action Api.Controllers.StudentsController.getStudentByID (Api) in 8326.893ms
+2023-08-23 03:51:00.127 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:51:00.200 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=10000 - - - 204 0 - 8912.2955ms
+2023-08-23 03:51:25.772 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=10000 - -
+2023-08-23 03:51:25.779 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:51:25.779 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 03:51:25.910 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 03:51:25.910 +03:00 [INF] Executing ObjectResult, writing value of type 'null'.
+2023-08-23 03:51:25.911 +03:00 [INF] Executed action Api.Controllers.StudentsController.getStudentByID (Api) in 131.1676ms
+2023-08-23 03:51:25.911 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:51:25.911 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=10000 - - - 204 0 - 140.2256ms
+2023-08-23 03:51:35.855 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=10000 - -
+2023-08-23 03:51:35.864 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:51:35.864 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 03:51:39.143 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 03:53:22.244 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 03:53:23.611 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 03:53:23.614 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 03:53:23.638 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 03:53:23.642 +03:00 [INF] Hosting environment: Development
+2023-08-23 03:53:23.645 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 03:53:25.475 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 03:53:27.389 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 03:53:27.392 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 03:53:27.478 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 87.2110ms
+2023-08-23 03:53:27.480 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 2021.0021ms
+2023-08-23 03:53:27.672 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 280.1752ms
+2023-08-23 03:53:28.004 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 03:53:28.993 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 988.8246ms
+2023-08-23 03:53:44.859 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=1000 - -
+2023-08-23 03:53:45.200 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:53:45.349 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 03:53:52.798 +03:00 [INF] Executed DbCommand (226ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 03:53:59.951 +03:00 [INF] Executed action Api.Controllers.StudentsController.getStudentByID (Api) in 14584.1971ms
+2023-08-23 03:53:59.954 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:54:00.073 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=1000 - - - 404 - application/json 15213.5171ms
+2023-08-23 03:54:22.564 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 03:54:22.649 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 85.0526ms
+2023-08-23 03:54:22.699 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 03:54:22.700 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 03:54:22.703 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 3.5432ms
+2023-08-23 03:54:22.786 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 86.5425ms
+2023-08-23 03:54:23.169 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 03:54:23.214 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 45.5272ms
+2023-08-23 03:54:30.317 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=1999 - -
+2023-08-23 03:54:30.334 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:54:30.334 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 03:54:30.602 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 03:55:00.091 +03:00 [INF] Executed action Api.Controllers.StudentsController.getStudentByID (Api) in 29756.4487ms
+2023-08-23 03:55:00.091 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:55:00.203 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=1999 - - - 404 - application/json 29886.0390ms
+2023-08-23 03:55:02.839 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 03:55:02.926 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 86.5926ms
+2023-08-23 03:55:03.030 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 03:55:03.031 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 0.5423ms
+2023-08-23 03:55:03.077 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 03:55:03.264 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 186.7971ms
+2023-08-23 03:55:03.476 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 03:55:03.539 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 63.1070ms
+2023-08-23 03:55:20.291 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=1999 - -
+2023-08-23 03:55:20.301 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:55:20.310 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 03:55:20.355 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 03:55:23.722 +03:00 [INF] Executed action Api.Controllers.StudentsController.getStudentByID (Api) in 3411.5781ms
+2023-08-23 03:55:23.722 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:55:23.776 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=1999 - - - 404 - application/json 3484.6053ms
+2023-08-23 03:56:03.782 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 03:56:05.390 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 03:56:05.400 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 03:56:05.436 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 03:56:05.443 +03:00 [INF] Hosting environment: Development
+2023-08-23 03:56:05.447 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 03:56:07.287 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 03:56:09.449 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 03:56:09.454 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 2200.3989ms
+2023-08-23 03:56:09.501 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 03:56:09.534 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 85.5452ms
+2023-08-23 03:56:09.737 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 236.7078ms
+2023-08-23 03:56:10.282 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 03:56:10.992 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 708.4907ms
+2023-08-23 03:56:30.815 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=177 - -
+2023-08-23 03:56:31.084 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:56:31.225 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 03:56:37.360 +03:00 [INF] Executed DbCommand (281ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 03:56:41.576 +03:00 [INF] Executed action Api.Controllers.StudentsController.getStudentByID (Api) in 10334.8095ms
+2023-08-23 03:56:41.579 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 03:56:41.681 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=177 - - - 404 - application/json 10865.9043ms
+2023-08-23 04:00:59.762 +03:00 [INF] Request starting HTTP/2 DELETE https://localhost:7087/api/Students/DeleteStudent?id=121 - -
+2023-08-23 04:00:59.802 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.DeleteStudent (Api)'
+2023-08-23 04:00:59.805 +03:00 [INF] Route matched with {action = "DeleteStudent", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteStudent(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 04:00:59.936 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 04:01:15.406 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 04:01:34.019 +03:00 [INF] Executed action Api.Controllers.StudentsController.DeleteStudent (Api) in 34214.0759ms
+2023-08-23 04:01:34.019 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.DeleteStudent (Api)'
+2023-08-23 04:01:34.154 +03:00 [INF] Request finished HTTP/2 DELETE https://localhost:7087/api/Students/DeleteStudent?id=121 - - - 404 - application/json 34391.7387ms
+2023-08-23 04:03:51.905 +03:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7087/api/Students/DeleteStudent?id=111 - -
+2023-08-23 04:03:51.909 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.DeleteStudent (Api)'
+2023-08-23 04:03:51.911 +03:00 [INF] Route matched with {action = "DeleteStudent", controller = "Students"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult DeleteStudent(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 04:03:51.959 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 04:04:00.612 +03:00 [INF] Executed action Api.Controllers.StudentsController.DeleteStudent (Api) in 8701.4627ms
+2023-08-23 04:04:00.615 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.DeleteStudent (Api)'
+2023-08-23 04:04:00.709 +03:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7087/api/Students/DeleteStudent?id=111 - - - 404 - application/json 8804.1239ms
+2023-08-23 04:10:28.609 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7087/api/Students/AddStudent application/json 70
+2023-08-23 04:10:28.621 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.AddStudent (Api)'
+2023-08-23 04:10:28.623 +03:00 [INF] Route matched with {action = "AddStudent", controller = "Students"}. Executing controller action with signature Entity.Models.Student AddStudent(Entity.Models.Student) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 04:10:29.514 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (DbType = Int32), @p2='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Students] ([firstName], [gradeID], [lastName])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1, @p2);
+2023-08-23 04:10:29.892 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'Entity.Models.Mawdw3TaskContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Students__gradeI__2C3393D0". The conflict occurred in database "Mawdw3Task", table "dbo.Grades", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+ClientConnectionId:be566e98-ca5a-42fa-978d-d174993b2bd9
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__Students__gradeI__2C3393D0". The conflict occurred in database "Mawdw3Task", table "dbo.Grades", column 'id'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.Read()
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSet(Int32 startCommandIndex, RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+ClientConnectionId:be566e98-ca5a-42fa-978d-d174993b2bd9
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.Consume(RelationalDataReader reader)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(StateManager stateManager, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2023-08-23 04:10:57.664 +03:00 [INF] Executed action Api.Controllers.StudentsController.AddStudent (Api) in 29040.2101ms
+2023-08-23 04:10:57.670 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.AddStudent (Api)'
+2023-08-23 04:10:57.724 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7087/api/Students/AddStudent application/json 70 - 400 - application/json 29115.3620ms
+2023-08-23 04:13:20.382 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 04:13:21.840 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 04:13:21.844 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 04:13:21.866 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 04:13:21.871 +03:00 [INF] Hosting environment: Development
+2023-08-23 04:13:21.876 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 04:13:23.706 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 04:13:26.818 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 3135.8768ms
+2023-08-23 04:13:27.837 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 04:13:27.851 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 13.2459ms
+2023-08-23 04:13:29.461 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 04:13:29.550 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 89.2984ms
+2023-08-23 04:13:36.644 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 04:13:37.244 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 600.3960ms
+2023-08-23 04:25:02.964 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 04:25:04.008 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 04:25:04.011 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 04:25:04.069 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 04:25:04.132 +03:00 [INF] Hosting environment: Development
+2023-08-23 04:25:04.137 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 04:25:05.948 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 04:25:07.862 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 04:25:07.875 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 10.8575ms
+2023-08-23 04:25:07.882 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 04:25:07.904 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 1969.7979ms
+2023-08-23 04:25:08.224 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 342.1758ms
+2023-08-23 04:25:08.726 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 04:25:09.613 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 886.9102ms
+2023-08-23 04:25:19.451 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=999 - -
+2023-08-23 04:25:19.661 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 04:25:19.750 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 04:25:25.949 +03:00 [INF] Executed DbCommand (196ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 04:26:11.501 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 04:26:12.434 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 04:26:12.481 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 04:26:12.666 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 04:26:12.805 +03:00 [INF] Hosting environment: Development
+2023-08-23 04:26:12.864 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 04:26:14.385 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 04:26:16.117 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 1748.3774ms
+2023-08-23 04:26:16.221 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 04:26:16.224 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 04:26:16.279 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 54.3336ms
+2023-08-23 04:26:16.622 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 400.9181ms
+2023-08-23 04:26:16.990 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 04:26:17.783 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 792.1459ms
+2023-08-23 04:26:30.546 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=999 - -
+2023-08-23 04:26:30.759 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 04:26:30.841 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 04:26:37.353 +03:00 [INF] Executed DbCommand (222ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 04:27:39.574 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 04:27:40.646 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 04:27:40.649 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 04:27:40.667 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 04:27:40.672 +03:00 [INF] Hosting environment: Development
+2023-08-23 04:27:40.674 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 04:27:42.511 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 04:27:44.494 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 04:27:44.514 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 17.8207ms
+2023-08-23 04:27:44.515 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 04:27:44.607 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 2109.3579ms
+2023-08-23 04:27:44.793 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 277.5260ms
+2023-08-23 04:27:45.232 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 04:27:46.140 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 907.9560ms
+2023-08-23 04:27:52.743 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=777 - -
+2023-08-23 04:27:53.157 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 04:27:53.328 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 04:28:01.415 +03:00 [INF] Executed DbCommand (255ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 04:28:34.367 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 04:28:35.452 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 04:28:35.455 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 04:28:35.479 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 04:28:35.489 +03:00 [INF] Hosting environment: Development
+2023-08-23 04:28:35.498 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 04:28:37.430 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 04:28:39.618 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 04:28:39.630 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 04:28:39.635 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 15.1905ms
+2023-08-23 04:28:39.772 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 2360.6419ms
+2023-08-23 04:28:39.990 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 359.9109ms
+2023-08-23 04:28:40.401 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 04:28:41.215 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 814.2782ms
+2023-08-23 04:28:46.861 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=13432432 - -
+2023-08-23 04:28:47.192 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 04:28:47.287 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 04:28:53.349 +03:00 [INF] Executed DbCommand (217ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 04:29:44.933 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 04:29:46.508 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 04:29:46.513 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 04:29:46.542 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 04:29:46.549 +03:00 [INF] Hosting environment: Development
+2023-08-23 04:29:46.553 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 04:29:48.841 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 04:29:51.190 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 04:29:51.190 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 04:29:51.226 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 34.2633ms
+2023-08-23 04:29:51.243 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 2416.5662ms
+2023-08-23 04:29:51.509 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 318.8054ms
+2023-08-23 04:29:55.169 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 04:29:55.812 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 642.7574ms
+2023-08-23 04:30:13.485 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=34432432 - -
+2023-08-23 04:30:13.800 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 04:30:13.942 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 04:30:22.222 +03:00 [INF] Executed DbCommand (355ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 04:34:49.916 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 04:34:50.951 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 04:34:50.954 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 04:34:50.973 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 04:34:51.019 +03:00 [INF] Hosting environment: Development
+2023-08-23 04:34:51.043 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 04:34:53.997 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 04:34:57.017 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 3031.1978ms
+2023-08-23 04:34:57.332 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 04:34:57.332 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 04:34:57.363 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 30.7061ms
+2023-08-23 04:34:57.741 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 408.6204ms
+2023-08-23 04:34:58.211 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 04:34:59.044 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 832.5433ms
+2023-08-23 04:35:07.484 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=545646565 - -
+2023-08-23 04:35:09.688 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 04:35:09.798 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 04:35:18.852 +03:00 [INF] Executed DbCommand (278ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 04:35:22.894 +03:00 [INF] Executed action Api.Controllers.StudentsController.getStudentByID (Api) in 13049.5053ms
+2023-08-23 04:35:22.900 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 04:35:23.011 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=545646565 - - - 404 - application/json 15527.7429ms
+2023-08-23 04:35:52.086 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 04:35:53.368 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 04:35:53.371 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 04:35:53.390 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 04:35:53.396 +03:00 [INF] Hosting environment: Development
+2023-08-23 04:35:53.404 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 04:35:54.822 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 04:35:57.090 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 04:35:57.104 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 12.1649ms
+2023-08-23 04:35:57.112 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 04:35:57.142 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 2334.6983ms
+2023-08-23 04:35:57.540 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 428.2097ms
+2023-08-23 04:35:57.939 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 04:35:58.908 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 967.7310ms
+2023-08-23 04:36:07.441 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=312132 - -
+2023-08-23 04:36:07.730 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 04:36:07.813 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 04:36:13.879 +03:00 [INF] Executed DbCommand (199ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 04:36:16.572 +03:00 [INF] Executed action Api.Controllers.StudentsController.getStudentByID (Api) in 8743.8412ms
+2023-08-23 04:36:16.576 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 04:36:16.678 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=312132 - - - 404 - application/json 9236.6757ms
+2023-08-23 04:36:57.659 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 04:36:58.856 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 04:36:58.873 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 04:36:58.911 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 04:36:58.943 +03:00 [INF] Hosting environment: Development
+2023-08-23 04:36:58.962 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 04:37:01.340 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 04:37:03.413 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 2092.3732ms
+2023-08-23 04:37:04.558 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 04:37:04.574 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 15.7190ms
+2023-08-23 04:37:05.536 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 04:37:05.625 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 89.2974ms
+2023-08-23 04:37:08.755 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 04:37:09.574 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 819.6096ms
+2023-08-23 04:37:20.033 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=6566565 - -
+2023-08-23 04:37:20.298 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 04:37:20.428 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 04:37:26.286 +03:00 [INF] Executed DbCommand (243ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 04:37:29.899 +03:00 [INF] Executed action Api.Controllers.StudentsController.getStudentByID (Api) in 9443.5647ms
+2023-08-23 04:37:29.905 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 04:37:30.026 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=6566565 - - - 404 - application/json 9992.8710ms
+2023-08-23 04:38:26.523 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 04:38:27.294 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 04:38:27.296 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 04:38:27.341 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 04:38:27.346 +03:00 [INF] Hosting environment: Development
+2023-08-23 04:38:27.348 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 04:38:29.026 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 04:38:31.750 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 04:38:31.762 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 10.5475ms
+2023-08-23 04:38:31.767 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 2757.2836ms
+2023-08-23 04:38:31.779 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 04:38:31.991 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 212.4698ms
+2023-08-23 04:38:32.457 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 04:38:33.443 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 986.3104ms
+2023-08-23 04:38:41.602 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=233232 - -
+2023-08-23 04:38:44.277 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 04:38:44.386 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 04:38:54.280 +03:00 [INF] Executed DbCommand (553ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 04:38:54.430 +03:00 [INF] Executed action Api.Controllers.StudentsController.getStudentByID (Api) in 10017.0408ms
+2023-08-23 04:38:54.453 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 04:38:54.609 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=233232 - - - 404 - application/json 13007.6063ms
+2023-08-23 04:41:20.652 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 04:41:21.525 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 04:41:21.528 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 04:41:21.546 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 04:41:21.551 +03:00 [INF] Hosting environment: Development
+2023-08-23 04:41:21.553 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 04:41:25.456 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 04:41:27.664 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 2215.5263ms
+2023-08-23 04:41:28.041 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 04:41:28.050 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 9.3212ms
+2023-08-23 04:41:31.168 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 04:41:31.258 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 89.7676ms
+2023-08-23 04:41:34.933 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 04:41:35.667 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 734.1433ms
+2023-08-23 04:41:52.810 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/getUserFromExternalPublicSource - -
+2023-08-23 04:41:53.120 +03:00 [INF] Executing endpoint 'Api.Controllers.UserController.getUserFromExternalPublicSource (Api)'
+2023-08-23 04:41:53.252 +03:00 [INF] Route matched with {action = "getUserFromExternalPublicSource", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] getUserFromExternalPublicSource() on controller Api.Controllers.UserController (Api).
+2023-08-23 04:42:38.554 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 04:42:39.451 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 04:42:39.457 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 04:42:39.483 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 04:42:39.487 +03:00 [INF] Hosting environment: Development
+2023-08-23 04:42:39.490 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 04:42:40.888 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 04:42:42.693 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 1821.5499ms
+2023-08-23 04:42:42.744 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 04:42:42.745 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 04:42:42.755 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 10.6896ms
+2023-08-23 04:42:42.978 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 233.0187ms
+2023-08-23 04:42:43.589 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 04:42:44.375 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 786.1560ms
+2023-08-23 04:42:55.213 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=32143 - -
+2023-08-23 04:42:55.451 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 04:42:55.556 +03:00 [INF] Route matched with {action = "getStudentByID", controller = "Students"}. Executing controller action with signature Entity.Models.Student getStudentByID(Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 04:43:01.653 +03:00 [INF] Executed DbCommand (180ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[id], [s].[firstName], [s].[gradeID], [s].[lastName]
+FROM [Students] AS [s]
+WHERE [s].[id] = @__p_0
+2023-08-23 04:43:04.236 +03:00 [INF] Executed action Api.Controllers.StudentsController.getStudentByID (Api) in 8664.2752ms
+2023-08-23 04:43:04.240 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.getStudentByID (Api)'
+2023-08-23 04:43:04.332 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/api/Students/getStudentByID?studentID=32143 - - - 404 - application/json 9118.2883ms
+2023-08-23 04:49:42.331 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 04:49:43.323 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 04:49:43.330 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 04:49:43.348 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 04:49:43.353 +03:00 [INF] Hosting environment: Development
+2023-08-23 04:49:43.356 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 04:49:45.052 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 04:49:46.897 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 04:49:46.909 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 04:49:46.910 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 1869.7631ms
+2023-08-23 04:49:46.925 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 28.1454ms
+2023-08-23 04:49:47.292 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 383.1405ms
+2023-08-23 04:49:47.722 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 04:49:48.619 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 896.6819ms
+2023-08-23 04:50:07.641 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7087/api/Students/SearchForStudent?name=Mohammad&grade=95 - 0
+2023-08-23 04:50:07.953 +03:00 [INF] Executing endpoint 'Api.Controllers.StudentsController.SearchForStudent (Api)'
+2023-08-23 04:50:08.101 +03:00 [INF] Route matched with {action = "SearchForStudent", controller = "Students"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Entity.DTO_s.studentDto] SearchForStudent(System.String, Int32) on controller Api.Controllers.StudentsController (Api).
+2023-08-23 04:50:14.907 +03:00 [INF] Executed DbCommand (327ms) [Parameters=[@__name_0='?' (Size = 50) (DbType = AnsiString), @__grade_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[id] AS [Id], ([s].[firstName] + ' ') + [s].[lastName] AS [FullName], [g].[name] AS [gradeName]
+FROM [Students] AS [s]
+INNER JOIN [Grades] AS [g] ON [s].[gradeID] = [g].[id]
+WHERE ([s].[firstName] = @__name_0 OR [s].[lastName] = @__name_0 OR (([s].[firstName] + ' ') + [s].[lastName]) = @__name_0) AND [g].[grade] = @__grade_1
+2023-08-23 04:50:15.055 +03:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Entity.DTO_s.studentDto, Entity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-08-23 04:50:15.096 +03:00 [INF] Executed action Api.Controllers.StudentsController.SearchForStudent (Api) in 6980.5917ms
+2023-08-23 04:50:15.099 +03:00 [INF] Executed endpoint 'Api.Controllers.StudentsController.SearchForStudent (Api)'
+2023-08-23 04:50:15.229 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7087/api/Students/SearchForStudent?name=Mohammad&grade=95 - 0 - 200 - application/json;+charset=utf-8 7588.3309ms
+2023-08-23 04:51:12.798 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 04:51:14.181 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 04:51:14.235 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 04:51:14.483 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 04:51:14.689 +03:00 [INF] Hosting environment: Development
+2023-08-23 04:51:14.797 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 04:51:15.897 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 04:51:17.316 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 1433.0602ms
+2023-08-23 04:51:17.404 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 04:51:17.406 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 04:51:17.601 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 195.7111ms
+2023-08-23 04:51:17.607 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 202.6358ms
+2023-08-23 04:51:17.999 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 04:51:18.775 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 774.4309ms
+2023-08-23 04:51:30.023 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7087/api/Students/SearchForStudent?name=Mohammad&grade=95 - 0
+2023-08-23 04:51:30.313 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-08-23 04:51:30.335 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2023-08-23 04:51:30.336 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7087/api/Students/SearchForStudent?name=Mohammad&grade=95 - 0 - 401 0 - 312.7792ms
+2023-08-23 05:39:15.994 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 05:39:16.462 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 05:39:16.464 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 05:39:16.480 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 05:39:16.483 +03:00 [INF] Hosting environment: Development
+2023-08-23 05:39:16.486 +03:00 [INF] Content root path: D:\Asp.Net Projects\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 05:39:22.354 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 05:39:24.094 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 05:39:24.097 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 05:39:24.114 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 12.2665ms
+2023-08-23 05:39:24.117 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 1780.1713ms
+2023-08-23 05:39:24.301 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 206.8286ms
+2023-08-23 05:39:24.491 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 05:39:24.921 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 430.2294ms
