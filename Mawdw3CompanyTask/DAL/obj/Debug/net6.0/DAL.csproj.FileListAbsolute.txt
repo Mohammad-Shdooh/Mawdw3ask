@@ -15,3 +15,20 @@ D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\refint\DAL.dll
 D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\DAL.pdb
 D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\DAL.genruntimeconfig.cache
 D:\Asp.Net Projects\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\ref\DAL.dll
+C:\Users\pc\Documents\GitHub\Mawdw3ask\Mawdw3CompanyTask\DAL\bin\Debug\net6.0\DAL.deps.json
+C:\Users\pc\Documents\GitHub\Mawdw3ask\Mawdw3CompanyTask\DAL\bin\Debug\net6.0\DAL.runtimeconfig.json
+C:\Users\pc\Documents\GitHub\Mawdw3ask\Mawdw3CompanyTask\DAL\bin\Debug\net6.0\DAL.dll
+C:\Users\pc\Documents\GitHub\Mawdw3ask\Mawdw3CompanyTask\DAL\bin\Debug\net6.0\DAL.pdb
+C:\Users\pc\Documents\GitHub\Mawdw3ask\Mawdw3CompanyTask\DAL\bin\Debug\net6.0\Entity.dll
+C:\Users\pc\Documents\GitHub\Mawdw3ask\Mawdw3CompanyTask\DAL\bin\Debug\net6.0\Entity.pdb
+C:\Users\pc\Documents\GitHub\Mawdw3ask\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+C:\Users\pc\Documents\GitHub\Mawdw3ask\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pc\Documents\GitHub\Mawdw3ask\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+C:\Users\pc\Documents\GitHub\Mawdw3ask\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+C:\Users\pc\Documents\GitHub\Mawdw3ask\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\pc\Documents\GitHub\Mawdw3ask\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\DAL.csproj.CopyComplete
+C:\Users\pc\Documents\GitHub\Mawdw3ask\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\DAL.dll
+C:\Users\pc\Documents\GitHub\Mawdw3ask\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\refint\DAL.dll
+C:\Users\pc\Documents\GitHub\Mawdw3ask\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\DAL.pdb
+C:\Users\pc\Documents\GitHub\Mawdw3ask\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\DAL.genruntimeconfig.cache
+C:\Users\pc\Documents\GitHub\Mawdw3ask\Mawdw3CompanyTask\DAL\obj\Debug\net6.0\ref\DAL.dll

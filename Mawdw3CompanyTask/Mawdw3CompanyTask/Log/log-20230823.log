@@ -659,3 +659,17 @@ DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 2023-08-23 05:39:24.301 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 206.8286ms
 2023-08-23 05:39:24.491 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
 2023-08-23 05:39:24.921 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 430.2294ms
+2023-08-23 05:53:29.709 +03:00 [INF] User profile is available. Using 'C:\Users\pc\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-23 05:53:30.225 +03:00 [INF] Now listening on: https://localhost:7087
+2023-08-23 05:53:30.228 +03:00 [INF] Now listening on: http://localhost:5087
+2023-08-23 05:53:30.240 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-23 05:53:30.243 +03:00 [INF] Hosting environment: Development
+2023-08-23 05:53:30.245 +03:00 [INF] Content root path: C:\Users\pc\Documents\GitHub\Mawdw3ask\Mawdw3CompanyTask\Mawdw3CompanyTask\
+2023-08-23 05:53:32.657 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+2023-08-23 05:53:38.413 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+2023-08-23 05:53:38.422 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+2023-08-23 05:53:38.463 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11976 application/javascript;+charset=utf-8 48.2061ms
+2023-08-23 05:53:38.474 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 5844.0856ms
+2023-08-23 05:53:38.624 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 202.8694ms
+2023-08-23 05:53:38.854 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+2023-08-23 05:53:39.240 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 385.6043ms
